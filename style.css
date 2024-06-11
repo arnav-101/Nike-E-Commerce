@@ -18,6 +18,27 @@
     --primary: #ccc;
 }
 
+.offscreen-menu.active {
+    right: 0;
+}
+
+.hamburger.active {
+    margin-left: auto;
+}
+
+.hamburger.active span:first-child {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #fff;
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:last-child {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #fff;
+}
 
 .image-wrapper {
     flex: 0 0 auto; 
