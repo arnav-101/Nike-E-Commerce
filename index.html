@@ -15,7 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
 </head>
-<body>
+<body class="overflow-x-hidden">
     
     <header>
         <nav class="nav-container">
@@ -36,23 +36,48 @@
     </header>
 
 
-    <section class="stating-page">
+    <section class="stating-page mt-7">
         <div class="content-container">
-            <div class="image-card">
-                <img class="sm:w-14" src="assets/nike-just-do-it.jpg" alt="">
-                <div class="image-caption">Nike Pegasus 41</div>
+            <div class="image-card flex flex-col items-left font-medium sm:items-center">
+                <img class="w-10/12 mx-auto aspect-square object-cover sm:aspect-auto" src="assets/nike-just-do-it.jpg" alt="">
+                <div class="image-caption mt-5 w-10/12 mx-auto md:text-center">Nike Pegasus 41</div>
             </div>
-            <div class="section-text-container">
-                <div class="image-info">
-                    <div class="heading">DON'T WASTE YOUR ENERGY</div>
-                    <div class="description">Run in Pegasus. Feel the responsive energy return of Air Zoom and all-new ReactX foam.</div>
-                    <div class="button-container">
-                        <button class="btn">Shop</button>
-                        <button class="btn">Shop All</button>
+            <div class="section-text-container mt-2 w-10/12 mx-auto">
+                <div class="image-info flex flex-col items-left sm:items-center">
+                    <div class="heading uppercase font-extrabold text-3xl tracking-wider text-gray-900 sm:text-5xl">Don't wase your energy</div>
+                    <div class="description mt-2 leading-5 text-gray-600">Run in Pegasus. Feel the responsive energy return of Air Zoom and all-new ReactX foam.</div>
+                    <div class="button-container flex gap-4 mt-2">
+                        <button class="btn bg-slate-900 text-white font-medium py-2 px-4 rounded-3xl transition-colors hover:bg-slate-400 hover:text-gray-800">Shop</button>
+                        <button class="btn bg-slate-900 text-white font-medium py-2 px-4 rounded-3xl transition-colors hover:bg-slate-400 hover:text-gray-800">Shop All</button>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="mt-24 mx-12">
+        <div class="text-2xl tracking-wider">Featured</div>
+        <div class="image-container w-full mt-8 flex gap-4 overflow-x-scroll">
+            <div class="image-wrapper w-10/12 lg:w-6/12 flex flex-col gap-3">
+                <img class="w-full" src="assets/featured-img-1.png" alt="">
+                <div class="mt-4 text-xl font-medium">Nike Cortez</div>
+                <a href=""><div class="underline underline-offset-4 font-medium transition-opacity hover:opacity-50">Shop</div></a>
+            </div>
+            <div class="image-wrapper w-10/12 lg:w-6/12 flex flex-col gap-3">
+                <img class="w-full" src="assets/featured-img-2.png" alt="">
+                <div class="mt-4 text-xl font-medium">Ace the Court</div>
+                <a href=""><div class="underline underline-offset-4 font-medium transition-opacity hover:opacity-50">Shop</div></a>
+            </div>
+            <div class="image-wrapper w-10/12 lg:w-6/12 flex flex-col gap-3">
+                <img class="w-full" src="assets/featured-img-3.png" alt="">
+                <div class="mt-4 text-xl font-medium">Nike Basketball Gear</div>
+                <a href=""><div class="underline underline-offset-4 font-medium transition-opacity hover:opacity-50">Shop</div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-24 mx-12">
+        <div class="text-2xl tracking-wider">Coulours of the Season</div>
     </section>
 
 </body>
