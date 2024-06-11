@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Nike</title>
+    <title>Nike. Just Do it.</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/Nike-Logo-1971-now.png" type="image/x-icon">
@@ -17,20 +17,25 @@
 </head>
 <body class="overflow-x-hidden">
     
-    <header>
-        <nav class="nav-container">
+    <header class="mt-96">
+        <nav class="nav-container flex gap-4 justify-around">
             <div class="nav-logo">
                 <img class="w-14" src="assets/Nike-Logo-1971-now.png" alt="">
             </div>
-            <ul class="nav-ul">
-                <li><a href="">Home</a></li>
-                <li><a href="">Best Selling</a></li>
-                <li><a href="">Online Market</a></li>
-                <li><a href="">Contact</a></li>
+            <ul class="nav-ul hidden md:flex md:gap-5">
+                <li class="text-black font-semibold transition-all hover:text-gray-600 hover:underline underline-offset-4"><a href="">Home</a></li>
+                <li class="text-black font-semibold transition-all hover:text-gray-600 hover:underline underline-offset-4"><a href="">Best Selling</a></li>
+                <li class="text-black font-semibold transition-all hover:text-gray-600 hover:underline underline-offset-4"><a href="">Online Market</a></li>
+                <li class="text-black font-semibold transition-all hover:text-gray-600 hover:underline underline-offset-4"><a href="">Contact</a></li>
             </ul>
             <div class="nav-search">
                 <button class="search-btn"><i class="fas fa-search"></i></button>
-                <input type="text" placeholder="Search">            
+                <input class="bg-slate-700 rounded-full px-4 py-2" type="text" placeholder="Search">            
+            </div>
+            <div class="hamburger block absolute">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
