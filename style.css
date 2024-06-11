@@ -69,6 +69,10 @@ button.search-btn:focus {
     background-color: #ceee;
 }
 
+.image-container {
+    
+}
+
 .image-wrapper {
     flex: 0 0 auto; 
     /* width: 18rem; */
